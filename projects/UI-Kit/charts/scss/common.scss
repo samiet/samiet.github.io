@@ -1,0 +1,64 @@
+@import "colors.scss";
+
+body{
+    padding: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: $dark;
+    line-height: 1.5em;
+}
+h1{
+    font-size: 2.5em;
+}
+h2{
+    font-size: 1.5em;
+   font-weight: 600;
+}
+strong{
+    font-weight: 600;
+}
+section{
+    width: 100%;
+    margin-bottom: 50px;
+}
+button,input,select,textarea,option{
+    font-family: 'Open Sans', sans-serif;
+//    font-weight: 400; 
+    box-sizing: border-box;
+    &:focus{
+        outline: none;
+    }
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+input::placeholder{
+    color: $border-grey;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox {
+  display: none;
+  border: none; }
+  .checkbox + label::before {
+    content: '';
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border-radius: 5px;
+    background-color: $border-grey;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+    transform: translateY(2px); }
+  .checkbox:checked + label::before {
+    background-image: url(../img/Check%20Icon.png);}
+.checkbox:disabled + label {
+    color: $border-grey;}
+.checkbox:disabled + label:before{
+    background-color: $border-grey;
+}

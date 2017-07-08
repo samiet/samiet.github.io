@@ -1,0 +1,272 @@
+@import "common.scss";
+
+.button{
+    padding: 10px 25px;
+    background-color: $blue;
+    color: #fff;
+    border-radius: 7px;
+}
+.author-menu{
+        li{
+        display: inline-block;
+        padding-right: 19px;
+        font-size: .8em;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='5' height='5'><circle cx='3' cy='3' r='2' fill='#b4bbc2'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 5px center;
+        &:first-child{
+            a{
+                color: $dark;
+            }
+        }
+        &:nth-child(2){
+            a{
+                color: $aqua;
+            }
+        }
+        &:last-child{
+            color: $border-grey;
+            background-image: none;
+            padding-right: 0;
+        }
+    }
+}
+
+.blog-1{
+    h1{
+        line-height: 1em;
+    }
+    h2{
+        margin: 50px 0 40px 0;
+        font-weight: 400;
+    }
+    p{
+        margin: 30px 0 30px 0;
+        &:last-child{
+            font-size: .9em;
+        }
+    }
+}
+.blog-2,.blog-3{
+    border-bottom: 2px solid $border-grey;
+    ul{
+        margin: 20px 0;
+    }
+
+    .button{
+        margin: 20px 0;
+    }
+}
+.blog-3{
+    border-bottom: none;
+    div{
+        margin-bottom: 20px;
+    }
+    .button{
+        margin-bottom: 0;
+    }
+}
+.blog-4{
+    h1{
+        line-height: 1em;
+    }
+    .second{
+        margin: 40px 0 20px 0;
+    }
+    .author-menu{
+        margin: 30px 0;
+        li{
+            &:nth-child(3){
+                color: $border-grey;
+            }
+            &:last-child a{
+                color: $blue;
+            }
+        }
+    }
+    p{
+        margin: 30px 0;
+    }
+    .some-info{
+        padding: 20px 25px;
+        border-radius: 5px;
+        background-color: $bg-grey;
+        span{
+            color: $blue;
+        }
+    }
+    &>ul{
+        margin: 0 100px 0 20px;
+        display: inline-block;
+        line-height: 2em;
+        li{
+            list-style-type:disc;
+        }
+    }
+    ol{
+        display: inline-block;
+        line-height: 2em;
+        list-style: decimal;
+        color: $aqua;
+        span{
+            color: $dark;
+        }
+    }
+    .photo{
+        .main{
+            width: 100%;
+        }
+        .main img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        .open{
+            display: none;
+        }
+        .all{
+            justify-content: flex-start;
+            img{
+                cursor: pointer;
+                margin: 15px 15px 0 0;
+                width: 140px;
+                height: 90px;
+                border-radius: 5px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .jacob{
+        border: 2px solid $border-grey;
+        border-right: none;
+        border-left: none;    
+        padding: 20px 15px;
+        min-height: 105px;
+        margin: 30px 0 20px 0;
+        img{
+            float: left;
+            margin: 0 30px 5px 0;
+        }
+        h4{
+            font-weight: 600;
+            font-size: 1em;
+        }
+        p{
+            font-weight: 600;
+            margin-bottom: 0;
+            margin-top: 10px;
+            color: $border-grey;
+        }
+    }
+    .like,.share{
+        font-size: .8em;
+        padding: 5px 10px 5px 30px;
+        background-color: $red;
+        background-image: url(../img/Like%20Icon.svg);
+        background-repeat: no-repeat;
+        background-position: left 10px center;
+    }
+    .share{
+        background-image: url(../img/Share%20Icon.svg);
+        background-color: $aqua;
+        margin-left: 15px;
+    }
+    .two-comments{
+        margin: 30px 0 10px 0;
+    }
+    .comments{
+        img{
+            float: left;
+            margin: 0 20px 5px 0;
+        }
+        time{
+            float: right;
+            font-size: .8em;
+            padding-left: 20px;
+            font-weight: 600;
+            color: $border-grey;
+            background-image: url(../img/Clock%20Icon.svg);
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+        h4{
+            font-weight: 600;
+        }
+        p{
+            margin: 0;
+        }
+        .com-1,.com-2{
+            min-width: 300px;
+            padding: 20px 0;
+            border-bottom: 2px solid $border-grey;
+        }
+        .com-2{
+            margin-left: 65px;
+        }
+    }
+}
+
+@media screen and (min-width:1921px){
+    body{
+        font-size: 2em;
+    }
+    .blog-3{
+        img{
+            width: 1200px;
+        }
+    }
+    .blog-4{
+        .comments{
+            img{
+                width: 80px;
+            }
+        }
+    }
+}
+@media screen and (min-width:320px) and (max-width:720px){
+    h1{
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    .button{
+            width: 100%;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.2em;
+            padding: 15px 0;
+        }
+    .blog-3{
+        img{
+            width: 100%;
+        }
+    }
+    .blog-4{
+        .photo{
+            .all{
+                justify-content: space-between;
+                img{
+                    cursor: pointer;
+                    margin: 15px 15px 0 0;
+                    width: 110px;
+                    height: 70px;
+                    border-radius: 5px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .like,.share{
+            font-size: 1.2em;
+            padding: 15px 0;
+            background-size: 30px;
+        }
+        .share{
+            margin: 10px 0 0 0;
+        }
+    }
+}

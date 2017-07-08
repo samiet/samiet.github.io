@@ -1,0 +1,326 @@
+$violet:#0a0912;
+$pink:#ccc;
+$project:#972d64;
+$menu-hover:#0077b5;
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../img/dark_background_texture.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 1.7em;
+    font-weight: 600;
+    h1{
+        font-weight: bolder;
+    }
+}
+.fixed-menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    background-color: $violet;
+    ul{
+        width: 100%;
+        max-width: 960px;
+        margin:0 auto;
+        li{
+            padding: 0 15px;
+            &:nth-of-type(2n) a{
+                &::before{
+                    transform: skewX(20deg);
+                }
+                &::after{
+                    transform: skewX(-20deg);
+                }
+            }
+        }
+        a{
+            display: block;
+            height: 30px;
+            position: relative;
+            span{
+                position: absolute;
+                color: $pink;
+                font-weight: bold;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 1;
+                transition: .2s ease;
+            }
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                border-left: 2px solid $pink;
+                top: 0;
+                bottom: 0;
+                left: -10px;
+                width: 100%;
+                transform: skewX(-20deg);
+                transition: .2s ease;
+            }
+            &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                border-right: 2px solid $pink;
+                top: 0;
+                bottom: 0;
+                right: -10px;
+                width: 100%;
+                transform: skewX(20deg);
+                transition: .2s ease;
+            }
+            &:hover{
+                span{
+                    color: $menu-hover;
+                    transition: .2s ease;
+                }
+                &::after,&::before{
+                    border-color: $menu-hover;
+                    transition: .2s ease;
+                }
+            }
+        }
+    }
+}
+.about-me{
+    border-radius: 0 0 5px 5px;
+    padding: 0px 20px 20px 20px;
+    background-color: rgba(255,255,255,.9);
+    h1{
+        text-align: center;
+    }
+    img{
+        width: 150px;
+        border-radius: 5px;
+        float: left;
+        margin: 0 10px 10px 0;
+    }
+    p{
+        text-align: justify;
+    }
+}
+.skills{
+    background-color: rgba(255,255,255,.9);
+    margin: 20px auto;
+    padding: 0 20px 20px 20px;
+    border-radius: 5px;
+    h1{
+        text-align: center;
+    }
+    li{
+        background-image: url(../img/arrow_button.png);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: left center;
+        padding-left: 30px;
+        line-height: 2em;
+        border-bottom: 1px solid #901a14;
+        &:last-of-type{
+            border-bottom: none;
+        }
+    }
+}
+.projects{
+    background-color: rgba(255,255,255,.9);
+    margin: 20px auto;
+    padding: 0 20px 40px 20px;
+    border-radius: 5px;
+    &>div>div{
+        padding-top: 20px;
+    }
+    h1{
+        text-align: center;
+    }
+    .projects-links{
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        max-height: 500px;
+        margin: 0 auto;
+        border-radius: 10px;
+        background-color: #888;
+        position: relative;
+        overflow: hidden;
+        .bg-image{
+            position: absolute;
+            top: -2px;
+            bottom: -2px;
+            left: -2px;
+            right: -2px;
+            background-size: cover;
+            background-position: center;
+            filter: blur(2px);
+            transition: .5s ease;
+        }
+        .name{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,.6);
+            text-align: center;
+            box-shadow:inset 0 0 30px 15px rgba(0,0,0,.6);
+            transition: .5s ease;
+            span{
+                font-size: 2.2em;
+                color: #999;
+                transition: .5s ease;
+            }
+        }
+        &:hover{
+            .bg-image{
+                filter: blur(0);
+                transition: .5s ease;
+            }
+            .name{
+                background-color: transparent;
+                box-shadow:inset 0 0 30px 10px rgba(18,16,31,.6);
+                span{
+                    transform: scale(0);
+                    transition: .5s ease;
+                }
+                transition: .5s ease;
+            }
+        }
+    }
+    div:nth-of-type(1) .projects-links{
+        .bg-image{
+            background-image: url(../img/project-1-bg.png);
+        }
+    }
+    div:nth-of-type(2) .projects-links{
+        .bg-image{
+            background-image: url(../img/project-2-bg.png);
+        }
+    }
+    div:nth-of-type(3) .projects-links{
+        .bg-image{
+            background-image: url(../img/project-3-bg.png);
+        }
+    }
+    
+    div:nth-of-type(1) .ui-kit-link .bg-image{
+        background-image: url(../projects/UI-Kit/img/base.png);
+    }
+    div:nth-of-type(2) .ui-kit-link .bg-image{
+        background-image: url(../projects/UI-Kit/img/blog.png);
+    }
+    div:nth-of-type(3) .ui-kit-link .bg-image{
+        background-image: url(../projects/UI-Kit/img/charts.png);
+    }
+    div:nth-of-type(4) .ui-kit-link .bg-image{
+        background-image: url(../projects/UI-Kit/img/e-commerce.png);
+    }
+    div:nth-of-type(5) .ui-kit-link .bg-image{
+        background-image: url(../projects/UI-Kit/img/footers.png);
+    }
+    div:nth-of-type(6) .ui-kit-link .bg-image{
+        background-image: url(../projects/UI-Kit/img/forms.png);
+    }
+    div:nth-of-type(7) .ui-kit-link .bg-image{
+        background-image: url(../projects/UI-Kit/img/navigation.png);
+    }
+}
+footer{
+    background-color: rgba(255,255,255,.9);
+    border-radius: 5px 5px 0 0;
+    padding: 5px 20px 20px 20px;
+    h1{
+        text-align: center;
+    }
+    div{
+        padding: 10px 0;
+        text-align: center;
+    }
+    &>div{
+        padding: 0;
+    }
+    span{
+        margin-right: 10px;
+    }
+    .social{
+        width: 160px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        a{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            transition: .3s linear;
+            position: relative;
+            box-shadow: 0 0 5px 3px rgba(0,119,181,.4);
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                right: 0px;
+                left: 0px;
+                border-radius: 50%;
+                background-color: rgba(0,119,181,.8);
+                background-image: url(../img/loading.png);
+                background-blend-mode: soft-light;
+                background-size: cover;
+            }
+            &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                right: 0px;
+                left: 0px;
+                border-radius: 50%;
+                background-position: center;
+                background-size: 70px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            &:nth-of-type(1)::after{
+                background-image: url(../img/fb.png);
+                background-size: 60px;
+                background-position: center;
+            }
+            &:nth-of-type(2)::after{
+                background-image: url(../img/skype.jpg);
+            }
+            &:nth-of-type(3)::after{
+                background-image: url(../img/li.png);
+            }
+            &:hover{
+                transform: scale(1.2);
+                box-shadow: none;
+                &::before{
+                    top: -3px;
+                    bottom: -3px;
+                    right: -3px;
+                    left: -3px;
+                    transition: .3s ease;
+                    animation: rotate 1s infinite linear;
+                }
+            }
+        }
+    }
+}

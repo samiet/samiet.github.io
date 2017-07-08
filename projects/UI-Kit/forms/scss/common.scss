@@ -1,0 +1,139 @@
+@import "colors.scss";
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600; 
+    &>section{
+        padding: 25px 100px;
+    }
+}
+.smooth{
+    border-radius: 5px;
+}
+.flex{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.social{
+    width: 190px;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+}
+.facebook{
+    background-color: $facebook-blue;
+}
+.twitter{
+    background-color: $twitter-blue;
+}
+div{
+    background-color: $bg-grey;
+}
+header{
+    box-sizing: border-box;
+}
+form{
+    padding: 30px;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: .8em;
+    box-sizing: border-box;
+}
+input{
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 48px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    &.text,&.password,&.email,&.tel{
+        border: 2px solid $border-grey;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: 15px center;
+        padding: 15px 15px 15px 45px;
+        color: $dark;
+        &:focus{
+            outline: none;
+        }
+        &::placeholder{
+            font-weight: 600;
+            color: $border-grey;
+        }
+    }
+    &.text{
+        background-image: url(../img/E-mail%20Icon.svg);
+        margin-bottom: 20px;
+    }
+    &.password{
+        background-image: url(../img/Lock%20Icon.svg);
+    }
+    &.submit{
+        font-size: 1em;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: #fff;
+    }
+}
+.select{
+    border-radius: 5px;
+    background-image: url(../img/Open%20Icon%20down.png);
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    -webkit-appearance:none;
+    appearance:none;
+    font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1em;
+    &:focus{
+        outline: none;
+    }
+}
+.checkbox{
+    display: none;
+    border: none;
+    &+label::before{
+        content: '';
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 5px;
+        background-color: $aqua;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 10px;
+        margin-top: 20px;
+        transform: translateY(2px);
+    }
+    &:checked+label::before{
+        background-image: url(../img/Check%20Icon.png);
+    }
+}
+    label{
+        display: inline-block;
+        color: $border-grey;
+        font-size: .8em;
+        margin-bottom: 20px;
+    }
+.divider{
+        position: relative;
+        height: 2px;
+        width: 100%;
+        background-color: $border-grey;
+        text-align: center;
+        margin: 20px 0;
+        span{
+            position: absolute;
+            background-color: $bg-grey;
+            font-size: .8em;
+            left: 44%;
+            top: -.5em;
+            color: $border-grey;
+            padding: 0 10px;
+        }
+    }

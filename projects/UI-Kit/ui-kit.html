@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI Kit</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../scss/style.css">
+</head>
+<body>
+    <section class="container projects">
+        <div class="row">
+           <h1 class="col-lg-12 col-md-12 col-sm-12">
+               UI Kit
+           </h1>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <a class='ui-kit-link projects-links' href="base/index.html" target="_blank">
+                    <div class="bg-image"></div>
+                    <div class="name"><span>Base</span></div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <a class='ui-kit-link projects-links' href="Blog/index.html" target="_blank">
+                    <div class="bg-image"></div>
+                    <div class="name"><span>Blog</span></div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <a class='ui-kit-link projects-links' href="charts/index.html" target="_blank">
+                    <div class="bg-image"></div>
+                    <div class="name"><span>Charts</span></div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <a class='ui-kit-link projects-links' href="e-commerce/index.html" target="_blank">
+                    <div class="bg-image"></div>
+                    <div class="name"><span>E-commerce</span></div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <a class='ui-kit-link projects-links' href="footers/index.html" target="_blank">
+                    <div class="bg-image"></div>
+                    <div class="name"><span>Footers</span></div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <a class='ui-kit-link projects-links' href="forms/index.html" target="_blank">
+                    <div class="bg-image"></div>
+                    <div class="name"><span>Forms</span></div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <a class='ui-kit-link projects-links' href="navigation/index.html" target="_blank">
+                    <div class="bg-image"></div>
+                    <div class="name"><span>Navigation</span></div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        var arr=document.querySelectorAll('.ui-kit-link');
+        arr.forEach(function(item){
+            item.style.height=item.offsetWidth+'px';
+        });
+        window.onresize=function(){
+            arr.forEach(function(item){
+                item.style.height=item.offsetWidth+'px';
+            });
+        }
+    </script>
+</body>
+</html>

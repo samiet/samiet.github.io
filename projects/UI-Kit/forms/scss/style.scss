@@ -1,0 +1,649 @@
+@import "common.scss";
+
+.section-1{
+    header{
+        width: 100%;
+        height: 145px;
+        background-size: cover;
+        padding: 20px 15px;
+        border-radius: 5px 5px 0 0;
+        a{
+            color: #fff;
+            float: right;
+        }
+    }
+    h1{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 2.3em;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    form{
+        padding-bottom: 0;
+    }
+    
+    .flex{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .text,.password,.submit{
+            width: 100%;
+        }
+        .submit{
+            background-color: $twitter-blue;
+        }
+    .section-1-div-1{
+        width: 455px;
+        height: 525px;
+        header{
+            background-image: url(../img/section-1-photo-1.png);
+        }
+        
+        form{
+            a{
+                width: 100%;
+                text-align: center;
+                color: $border-grey;
+                margin: 20px 0;
+            }
+        }
+    }
+    .section-1-div-2{
+        width: 455px;
+        height: 525px;
+        header{
+            background-image: url(../img/section-1-photo-2.png);
+        }
+        .submit{
+            background-color: $aqua;
+        }
+    }
+}
+.section-2{
+    margin-top: 50px;
+    &>div{
+        width: 300px;
+        padding: 20px;
+        a{
+            margin-top: 3px;
+            color: $twitter-blue;
+        }
+    }
+    form{
+        padding:20px 10px 10px 10px;
+    }
+    form>a{
+        width: 100%;
+        text-align: center;
+        color: $border-grey;
+        margin: 20px 0;
+    }
+    .text,.password,.submit{
+        width: 100%;
+     }
+    .social{
+        margin: 0 10px;
+        padding: 10px;
+        color: #fff;
+        background-repeat: no-repeat;
+        background-position:15px center;
+        margin-bottom: 15px;
+    }
+    .facebook{
+        background-image: url(../img/Facebook%20Logo.svg);
+    }
+    .twitter{
+        background-image: url(../img/Twitter%20Logo.svg);
+    }
+    .section-2-div-1{
+        .submit{
+            background-color: $twitter-blue;
+        }
+    }
+    .section-2-div-2{
+        .text{
+            background-image: url(../img/E-mail%20Icon%20section-2.svg);
+        }
+        .password{
+            background-image: url(../img/Lock%20Icon%20section-2.svg);
+        }
+        .submit{
+            background-color: $aqua;
+        }
+    }
+    .section-2-div-3{
+        flex-direction: column;
+        background-color: transparent;
+        padding: 0;
+        .form-1{
+            width: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+            .submit{
+                background-color: $red;
+            }
+        }
+        .form-2{
+            width: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+            form{
+                width: 100%;
+                padding: 0;
+                display: flex;
+            }
+            p{
+                margin: 20px 0;
+                color: $border-grey;
+                font-size: .8em;
+            }
+            .text{
+                width: 200px;
+                height: 48px;
+                margin-bottom: 0;
+                margin-right: 7px;
+            }
+            .submit{
+                width: 48px;
+                height: 48px;
+                background-image: url(../img/Forward%20Icon.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-color: $yellow;
+            }
+        }
+    }
+}
+.section-3{
+    .section-3-textarea{
+        width: 100%;
+    }
+    .text,.email{
+        width: 260px;
+        height: 48px;
+        background-image: none;
+        padding-left: 15px;
+    }
+    .select{
+        width: 260px;
+        height: 48px;
+        background-color: $twitter-blue;
+        width: 260px;
+        color: #fff;
+        padding-left: 15px;
+    }
+    .textarea{
+        box-sizing: border-box;
+        border-radius: 5px;
+        width: 100%;
+        height: 140px;
+        border: 2px solid $border-grey;
+        color: $dark;
+        font-size: .8em;
+        padding: 15px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        &:focus{
+//            border-color:$dark;
+            outline: none;
+        }
+    }
+    .submit{
+        background-color: $aqua;
+        float: right;
+        width: 140px;
+        margin-top: 20px;
+    }
+    .section-3-div-1{
+        padding: 20px;
+        max-width: 620px;
+        form{
+            width: 100%;
+            padding: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+            div:last-child{
+                width: 100%;
+            }
+        }
+    }
+    .section-3-div-2{
+        width: 300px;
+        padding: 20px;
+        form{
+            width: 100%;
+            padding: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+            .text,.email{
+                width: 100%;
+            }
+            .email{
+                margin-bottom: 20px;
+            }
+            div{
+                width: 100%;
+            }
+        }
+    }
+}
+.section-4{
+    &>div{
+        padding: 20px;
+    }
+    h4{
+        margin-bottom: 30px;
+    }
+    form{
+        padding: 10px;
+        h4{
+            margin: 30px 0 35px -10px;
+        }
+    }
+    input,select{
+        width: 272px;
+    }
+    label{
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    a{
+        color: $twitter-blue;
+        &::before{
+            content: '';
+            display: inline-block;
+            height: 1em;
+            width: 1em;
+            background-image: url(../img/Back%20Icon.png)
+                ;
+            background-repeat: no-repeat;
+            background-position: left bottom;
+        }
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .select{
+        height: 48px;
+        border: none;
+        background-color: $yellow;
+        color: #fff;
+        padding-left: 15px;
+    }
+    .text,.email{
+        background-image: none;
+        padding-left: 15px;
+    }
+    .tel{
+        padding-left: 15px;
+    }
+    .submit{
+        width: 185px;
+        background-color: $aqua;
+        background-image: url(../img/Forward%20Icon.png);
+        background-repeat: no-repeat;
+        background-position: right 15px center;
+        background-size: .4em;
+    }
+}
+
+@media screen and (min-width:1921px){
+    body{
+        font-size: 2em;
+    }
+    .section-1{
+        header{
+            height: 290px;
+            padding: 40px 30px;
+            border-radius: 10px 10px 0 0;
+        }
+        h1{
+            margin-top: 60px;
+        }
+        .flex{
+            padding: 0 60px;
+        }
+        .section-1-div-1,.section-1-div-2{
+            width: 910px;
+            height: 1050px;
+            form{
+                input{
+                    padding-left: 80px;
+                    height: 100px;
+                    background-size: 40px;
+                    &.submit{
+                        padding-left: 0;
+                    }
+                }
+                a{
+                    margin: 40px 0;
+                }
+                .checkbox+label:before{
+                    width: 30px;
+                    height: 30px;
+                }
+                .checkbox:checked+label:before{
+                    background-size: 17px;
+                }
+                label{
+                    margin: 15px 0 35px 0;
+                }
+                .divider{
+                    margin: 80px 0 40px 0;
+                }
+            }
+            .flex a{
+                width: 40%;
+                margin-top: 50px;
+            }
+        }
+    }
+    .section-2{
+        margin-top: 100px;
+        &>div{
+            width: 600px;
+            padding: 40px;
+            a{
+                margin-top: 6px;
+            }
+        }
+        form{
+            padding:40px 20px 20px 20px;
+            input{
+                height: 80px;
+                background-size: 35px;
+                padding-left: 70px;
+                &.submit{
+                    padding-left: 0;
+                }
+            }
+        }
+        form>a{
+            margin: 40px 0;
+        }
+        .social{
+            width: 240px;
+            margin: 0 20px;
+            padding: 20px;
+            background-position:20px center;
+            background-size: 30px 30px;
+            margin-bottom: 30px;
+        }
+        .section-2-div-2{
+            .checkbox+label:before{
+                width: 30px;
+                height: 30px;
+            }
+            .checkbox:checked+label:before{
+                background-size: 17px;
+            }
+            label{
+                margin: 15px 0 35px 0;
+            }
+        }
+        .section-2-div-3{
+            .form-1{
+                width: 600px;
+                padding: 60px;
+                margin-bottom: 60px;
+            }
+            .form-2{
+                width: 600px;
+                padding: 40px;
+                p{
+                    margin: 40px 0;
+                }
+                .text{
+                    width: 400px;
+                    height: 96px;
+                    margin-right: 14px;
+                }
+                .submit{
+                    width: 96px;
+                    height: 96px;
+                    background-size: 15px;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+    .section-3{
+        .text,.email{
+            width: 520px;
+            height: 96px;
+            padding-left: 30px;
+        }
+        .select{
+            width: 520px;
+            height: 96px;
+            height: 96px;
+            width: 520px;
+            padding-left: 30px;
+            background-size: 20px;
+        }
+        .checkbox+label:before{
+            width: 30px;
+            height: 30px;
+        }
+        .checkbox:checked+label:before{
+            background-size: 17px;
+        }
+        .textarea{
+            border-radius: 10px;
+            height: 280px;
+            padding: 30px;
+        }
+        .submit{
+            width: 280px;
+            height: 60px;
+            margin-top: 40px;
+        }
+        .section-3-div-1{
+            padding: 40px;
+            max-width: 1240px;
+            form{
+                padding: 20px;
+                margin-top: 30px;
+            }
+        }
+        .section-3-div-2{
+            width: 600px;
+            padding: 40px;
+            form{
+                padding: 20px;
+                margin-top: 30px;
+                .email{
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+    .section-4{
+        &>div{
+            padding: 40px;
+        }
+        h4{
+            margin-bottom: 60px;
+        }
+        form{
+            padding: 20px;
+            h4{
+                margin: 60px 0 70px -20px;
+            }
+        }
+        input,select{
+            width: 544px;
+            height: 96px;
+        }
+        label{
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        .select{
+            height: 96px;
+            padding-left: 30px;
+            background-size: 25px;
+        }
+        .text,.email{
+            padding-left: 30px;
+        }
+        .tel{
+            padding-left: 30px;
+        }
+        .submit{
+            width: 370px;
+        }
+    }
+}
+@media screen and (min-width:961px) and (max-width:1280px){
+    body>section{
+        flex-wrap: wrap;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:960px){
+    body>section{
+        flex-wrap: wrap;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    section>div{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width:320px) and (max-width:768px){
+    body>section{
+        flex-wrap: wrap;
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+    section>div{
+        margin-bottom: 20px;
+    }
+    .section-1{
+        header{
+            height: 125px;
+        }
+        h1{
+            margin-top: 20px;
+        }
+        .flex{
+            flex-wrap: wrap;
+            a{
+                width: 100%;
+                &.facebook{
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .text,.password,.submit{
+                width: 100%;
+            }
+            .submit{
+                background-color: $twitter-blue;
+            }
+        .section-1-div-1,.section-1-div-2{
+            width: 100%;
+            height: 555px;
+        }
+    }
+    .section-2{
+        &>div{
+            width: 100%;
+            padding: 15px;
+        }
+        .flex{
+            flex-wrap: wrap;
+        }
+        .social{
+            width: 100%;
+            height: 50px;
+            padding-top: 20px;
+            text-transform: uppercase;
+        }
+        .section-2-div-3{
+            .form-1{
+                width: 100%;
+                form{
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+            }
+            .form-2{
+                width: 100%;
+                form{
+                    width: 100%;
+                    flex-wrap: wrap;
+                }
+                .text{
+                    width: 100%;
+                    margin-bottom: 20px;
+                    margin-right: 0;
+                }
+                .submit{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .section-3{
+        .text,.email{
+            width: 100%;
+        }
+        form{
+            &>div{
+                width: 100%;
+                &:nth-of-type(2n){
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .select{
+            width: 100%;
+        }
+        .submit{
+            width: 100%;
+        }
+        .section-3-div-2{
+            width: 100%;
+            form{
+                .email{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+    .section-4{
+        h4{
+            margin-bottom: 20px;
+        }
+        form{
+            .flex{
+                flex-wrap: wrap;
+                div{
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                a{
+                    width: 100%;
+                    padding: 15px 0;
+                    text-align: center;
+                    background-color: #fff;
+                    border: 2px solid $twitter-blue;
+                    border-radius: 5px;
+                    margin-top: 20px;
+                }
+                .submit{
+                    margin-top: 20px;
+                    width: 100%;
+                }
+            }
+        }
+        input,select{
+            width: 100%;
+        }
+    }
+}

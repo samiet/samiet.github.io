@@ -1,0 +1,86 @@
+body {
+  padding: 0 50px;
+  min-width: 350px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #383737;
+  line-height: 1.5em; }
+
+h1 {
+  font-size: 2.3em; }
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 600; }
+
+div {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+strong {
+  font-weight: 600; }
+
+section {
+  width: 100%;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #f2f5f8; }
+
+button, input, select, textarea, option {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  button:focus, input:focus, select:focus, textarea:focus, option:focus {
+    outline: none; }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+input::-webkit-input-placeholder {
+  color: #c6ccd2; }
+
+input:-ms-input-placeholder {
+  color: #c6ccd2; }
+
+input::placeholder {
+  color: #c6ccd2; }
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.checkbox {
+  display: none;
+  border: none; }
+
+.checkbox + label::before {
+  content: '';
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  border-radius: 5px;
+  background-color: #c6ccd2;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px); }
+
+.checkbox:checked + label::before {
+  background-image: url(../img/Check%20Icon.png);
+  background-color: #24aa98; }
+
+.checkbox:disabled + label {
+  color: #c6ccd2; }
+
+.checkbox:disabled + label:before {
+  background-color: #c6ccd2; }

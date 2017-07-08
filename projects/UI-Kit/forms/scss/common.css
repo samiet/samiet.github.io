@@ -1,0 +1,141 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600; }
+  body > section {
+    padding: 25px 100px; }
+
+.smooth {
+  border-radius: 5px; }
+
+.flex {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.social {
+  width: 190px;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff; }
+
+.facebook {
+  background-color: #3162a2; }
+
+.twitter {
+  background-color: #65abd0; }
+
+div {
+  background-color: #f2f5f8; }
+
+header {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+form {
+  padding: 30px; }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: .8em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: 48px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1em; }
+  input.text, input.password, input.email, input.tel {
+    border: 2px solid #c6ccd2;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    padding: 15px 15px 15px 45px;
+    color: #383737; }
+    input.text:focus, input.password:focus, input.email:focus, input.tel:focus {
+      outline: none; }
+    input.text::-webkit-input-placeholder, input.password::-webkit-input-placeholder, input.email::-webkit-input-placeholder, input.tel::-webkit-input-placeholder {
+      font-weight: 600;
+      color: #c6ccd2; }
+    input.text:-ms-input-placeholder, input.password:-ms-input-placeholder, input.email:-ms-input-placeholder, input.tel:-ms-input-placeholder {
+      font-weight: 600;
+      color: #c6ccd2; }
+    input.text::placeholder, input.password::placeholder, input.email::placeholder, input.tel::placeholder {
+      font-weight: 600;
+      color: #c6ccd2; }
+  input.text {
+    background-image: url(../img/E-mail%20Icon.svg);
+    margin-bottom: 20px; }
+  input.password {
+    background-image: url(../img/Lock%20Icon.svg); }
+  input.submit {
+    font-size: 1em;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #fff; }
+
+.select {
+  border-radius: 5px;
+  background-image: url(../img/Open%20Icon%20down.png);
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1em; }
+  .select:focus {
+    outline: none; }
+
+.checkbox {
+  display: none;
+  border: none; }
+  .checkbox + label::before {
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    background-color: #24aa98;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+    margin-top: 20px;
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); }
+  .checkbox:checked + label::before {
+    background-image: url(../img/Check%20Icon.png); }
+
+label {
+  display: inline-block;
+  color: #c6ccd2;
+  font-size: .8em;
+  margin-bottom: 20px; }
+
+.divider {
+  position: relative;
+  height: 2px;
+  width: 100%;
+  background-color: #c6ccd2;
+  text-align: center;
+  margin: 20px 0; }
+  .divider span {
+    position: absolute;
+    background-color: #f2f5f8;
+    font-size: .8em;
+    left: 44%;
+    top: -.5em;
+    color: #c6ccd2;
+    padding: 0 10px; }
