@@ -97,7 +97,7 @@ body {
 .about-me {
   border-radius: 0 0 5px 5px;
   padding: 0px 20px 20px 20px;
-  background-color: rgba(255, 255, 255, 0.9); }
+  background-color: rgba(255, 255, 255, 0.7); }
   .about-me h1 {
     text-align: center; }
   .about-me img {
@@ -109,7 +109,7 @@ body {
     text-align: justify; }
 
 .skills {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.7);
   margin: 20px auto;
   padding: 0 20px 20px 20px;
   border-radius: 5px; }
@@ -127,7 +127,7 @@ body {
       border-bottom: none; }
 
 .projects {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.7);
   margin: 20px auto;
   padding: 0 20px 40px 20px;
   border-radius: 5px; }
@@ -225,7 +225,7 @@ body {
     background-image: url(../projects/UI-Kit/img/navigation.png); }
 
 footer {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 5px 5px 0 0;
   padding: 5px 20px 20px 20px; }
   footer h1 {
